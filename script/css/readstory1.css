@@ -1,0 +1,559 @@
+
+.bgg{
+background: url("../image/R5.png") ;
+
+}
+
+@media (max-width: 600px){
+    .bgg{
+        background: url("../image/pg2.png") no-repeat ;
+    }
+}
+
+
+.body {
+    background-color:white;
+    font-family: 'cwTeXYen'!important;
+    font-weight: 800;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.bg1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 60%;
+    z-index: -10;
+    opacity: 0.7;
+} 
+.bg2{
+    position: absolute;
+    bottom: -6%;
+    right: 0%;
+    height:60%;
+    z-index: -20;
+    opacity: 0.7;
+}
+
+.bg3{
+    position: absolute;
+    bottom: 10%;
+    height:8%;
+    left: 8%;
+    opacity: 0.8;
+}
+.bg4{
+    position: absolute;
+    top: 12%;
+    height:5%;
+    right: 10%;
+    opacity: 0.7;
+}
+.bg5{
+    position: absolute;
+    top: 12%;
+    height:5%;
+    right: 10%;
+    opacity: 0.7;
+}
+
+/**//*主要內容區域*/
+            .box h3{
+              text-align:center;
+              position:relative;
+              top:30px;
+              margin: 0 0 8% 0;
+              font-size: 40px;
+            }
+            .box {
+            position: relative;
+            top:-30px;
+            width:70%;
+            background:none;
+            margin:40px auto;
+            background: none;
+            }
+            .footer {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              padding: 1rem;
+              background-color: #efefef;
+              text-align: center;
+            }
+            .effect1{
+            -webkit-box-shadow: 0 0 12px  #D4D4D4;
+            -moz-box-shadow: 0 0 12px  #D4D4D4;
+             box-shadow: 0 0 15px 1px #D4D4D4;
+            }
+            .ch1{
+            font-size: 40px;
+            margin:0% 30% 2% 5%;
+            position: relative;
+            top: -50px;
+            border-radius:10px;
+
+            }
+            .ch-1{
+            width: 65px;
+            height: 65px;
+            position: relative;
+            top: 55px;
+            left: 90px;
+            }
+            .ch-1-1{
+            position: relative;
+            left: 170px;
+            color: #3C3C3C;
+            font-size: 45px;
+            font-weight: 800;
+            }
+
+
+
+
+/*window*/
+/*包起來每個機器人在中間的*/
+.main1{
+    display: inline-flex;
+    Flex-wrap: wrap;
+
+}
+/*每個機器人取間隔*/
+.empty{
+
+    width: 200px;
+    margin: 10px 80px 10px 80px;
+}
+
+/*小的box*/
+
+
+/*hover img*/
+ .title {
+     position: absolute;
+     left: 0;
+     top: -80px;
+     width: 100%;
+     z-index: 1;
+     line-height: 300px;
+     text-align: center;
+     transform: translate3d(0, 0, 0);
+     color: black;
+     text-transform: uppercase;
+     font-family: 'Playfair Display', serif;
+     letter-spacing: 0.4em;
+     font-size: 24px;
+     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+     text-indent: 0.3em;
+}
+.title img{
+     z-index: 1;
+     width: 85px;
+     height: 85px;
+     border-radius: 50%;
+
+}
+
+
+
+
+.rs-tx1{
+    font-size: 20px;
+    margin: 3% 2%;
+    width: 95%;
+    height: 350px;
+    resize:none;
+    border-color: white;
+    border-radius: 30px;
+
+}
+
+@media screen and (max-width: 600px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+/*pop*/
+
+.popup {
+  margin: 3% auto;
+  padding: 20px;
+  background: none;
+  border-radius: 5px;
+  width: 90%;
+  position: relative;
+  top: 0px;
+  transition: all 1s ease-in-out;
+  background: none;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color:  #85653E;
+}
+.close2{
+    height:100px;
+    width: 100px;
+    position:relative;
+    top: -75px; 
+    left: 65%;
+}
+
+.rs-tx{
+    font-size: 20px;
+    margin: 1% 2%;
+    width: 95%;
+    height: 350px;
+    border: 2px solid #85653E ;
+    resize:none;
+}
+/*@media screen and (max-width: 600px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+#bar*/
+#bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     background: black; */
+}
+
+.bar {
+    background: #3C3C3C;
+    bottom: 1px;
+    height: 10px;
+    width: 8px;
+    margin: 0px 4px;
+    border-radius: 5px;
+    animation: sound 0ms -600ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+       opacity: .35;
+        height: 20px; 
+    }
+    100% {
+        opacity: 1;       
+        height: 70px;        
+    }
+}
+
+
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 15px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 29px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 43px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 57px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 71px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 85px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 99px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 113px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 127px; animation-duration: 442ms; }
+
+
+
+/*time*/
+.time1{
+    text-align: center;
+    color: #3C3C3C;
+    font-size: 20px; 
+    width: 150px;
+    border: none; 
+    background: none;
+}
+
+/*player*/
+.playpause label {
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 55px;
+    cursor: pointer;
+    border-color: transparent transparent transparent #3C3C3C;
+    transition: 100ms all ease;
+    border-style: double;
+    border-width: 0px 0 0px 50px;
+}
+ .playpause input[type='checkbox'] {
+     visibility: hidden;
+}
+ .playpause input[type='checkbox']:checked + label {
+     border-style: solid;
+     border-width: 27px 0 27px 40px;
+}
+
+
+@media screen and (max-width: 600px){
+  .playpause label {
+    position: relative;
+    left: -23%;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 35px;
+    cursor: pointer;
+    border-color: transparent transparent transparent #3C3C3C;
+    transition: 100ms all ease;
+    border-style: double;
+    border-width: 0px 0 0px 40px;}
+.close2{
+    height:80px;
+    width: 80px;
+    position:relative;
+    top: -55px; 
+    left: 40%;
+}
+}
+ .playpause input[type='checkbox'] {
+     visibility: hidden;
+}
+ .playpause input[type='checkbox']:checked + label {
+     border-style: solid;
+     border-width: 17px 0 17px 30px;
+}
+ 
+}
+
+.main2{
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #D2B48C;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  width: 80%;
+  font-size: 20px;
+  display: flex;
+  height: 3em;
+  line-height: 3;
+  font-weight: bolder;
+  background: #D2B48C;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: black;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #D2B48C;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+.playpause0{
+width:400px; 
+margin:0 auto; 
+position: relative; 
+left: -60px;
+}
+
+
+
+
+/*RWD*/
+@media (max-width: 600px) {
+   .box h3{
+              text-align:center;
+              position:relative;
+              width: 300px;
+              top:20px;
+              margin: 0 0 0% 0;
+              font-size: 25px;
+            }
+            .box {
+            position: relative;
+            top:-50px;
+            width:90%;
+            background:none;
+            margin:40px auto;
+            }
+            .footer {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              padding: 1rem;
+              background-color: #efefef;
+              text-align: center;
+            }
+            .ch1{
+            font-size: 40px;
+            margin:0 auto;
+            position: relative;
+            top: -50px;
+            border-radius:10px;
+            width: 180px;
+            }
+            .ch-1{
+            width: 55px;
+            height: 55px;
+            left: 0px;
+            position: relative;
+            top: 55px;
+            }
+            .ch-1-1{
+            position: relative;
+            top: 10px;
+            left: 65px;
+            color: #3C3C3C;
+            font-size: 30px;
+            font-weight: 800;
+            }
+.bg1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 20%;
+    z-index: -10;
+    opacity: 0.7;
+} 
+.bg2{
+    position: absolute;
+    bottom: -15%;
+    right: 0%;
+    height:20%;
+    z-index: -20;
+    opacity: 0.7;
+}
+
+
+
+.rs-tx1{
+    font-size: 20px;
+    margin: 3% 2%;
+    width: 95%;
+    height: 350px;
+    resize:none;
+    border-color: white;
+    border-radius: 30px;
+
+}            
+
+/*box*/
+.empty{
+    margin: 0 auto;
+    width: 300px;
+}
+ .title {
+     position: absolute;
+     left: 0;
+     top: -105px;
+     width: 100%;
+     z-index: 1;
+     line-height: 300px;
+     text-align: center;
+     transform: translate3d(0, 0, 0);
+     color: black;
+     text-transform: uppercase;
+     font-family: 'Playfair Display', serif;
+     letter-spacing: 0.4em;
+     font-size: 20px;
+     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+     text-indent: 0.3em;
+}
+.title img{
+     z-index: 1;
+     width: 55px;
+     height: 55px;
+     border-radius: 50%;
+
+}
+.popup {
+  margin: 3% auto;
+  background: none;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+
+}
+
+
+.bar {
+    background: #3C3C3C;
+    bottom: 1px;
+    height: 7px;
+    width: 5px;
+    margin: 0px 4px;
+    border-radius: 5px;
+    animation: sound 0ms -600ms linear infinite alternate;
+}
+.main2{
+    margin: 0 auto;
+    width: 280px;
+    height: 300px;
+}
+.playpause0{
+width:250px; 
+margin:0 auto; 
+position: relative; 
+left: 20px;
+}
+}
+
+.aaa{
+
+}
+
+@media (max-width: 600px){
+    .aaa{
+        background-color:white ;
+    }
+}
