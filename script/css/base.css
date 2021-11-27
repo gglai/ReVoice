@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+main > .container {
+        padding: 40px 15px 0;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+/*body-bg*/
+.container2 {
+position: relative;
+top: 400px;
+text-align: center;
+  width: auto;
+  max-width: 100%;
+  padding: 0 15px;
+  font-size: 20px;
+  opacity:0.6;
+}
+
+.bgbg {
+  width: 100%;
+  height: 105%;
+  background-repeat:repeat;
+  position: absolute;
+  
+}
+
+
+/*header*/
+.bg-co{
+    background-color:white;
+}
+.ft{
+    /*font-family: ‘cwTeXFangSong’, serif;*/
+    font-family: 'cwTeXYen'!important;
+    font-weight: 800;
+}
+.font-co{
+    color: #6B4909;
+    font-size: 20px;
+    font-family: ‘cwTeXFangSong’ Microsoft JhengHei, serif;
+    font-weight: bolder;
+}
+
+a.font-co:hover , a.font-co:active{
+   color: #362506;
+   text-decoration:none;
+}
+
+.ft-bg{
+    background-color: #C0A87A;
+    border-radius:8px;
+}
+
+
+
+/*login*/
+.hi{
+    font-weight: 800;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  color:#6B4909; 
+  display: inline-flex;
+}
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color:#6B4909; 
+  border: 2px solid #C0A87A;
+  border-radius:8px;
+}
+
+.button1:hover {
+  background-color: #C0A87A;
+  color: white;
+}
+
+/*img*/
+.ch-bg{
+    width:100%; 
+    /*background-image:url(ch-bg.jpg);*/
+
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.ch-bg-ft {
+    text-align: center;
+    color:white; 
+    font-weight:800; 
+    font-size:5vmin; 
+    position:absolute;
+    top:60%;
+    left:57%;
+    transform: translate(-64%, -74%); 
+    z-index:1000;
+    
+
+}
+
+
+
+
+#footer {
+    position: relative;
+    top: 50px;
+　  height: 50px;
+    text-align: center;
+}
+
+
+.aaa{
+
+}
+
+@media (max-width: 600px){
+    .aaa{
+        background-color:white ;
+    }
+}
