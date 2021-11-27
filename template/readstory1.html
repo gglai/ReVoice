@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>ReVoice 智慧伴讀</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+    
+    <link rel="stylesheet" type="text/css" href="../script/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../script/css/readstory1.css">
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class=" body d-flex flex-column h-100 ft bgg">
+    
+<header>
+
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+            <div class="box ">
+
+                   <div id="popup2" >  
+                      <div class="popup">
+                          <h2>伴讀中...</h2>
+                          
+                          <div class="">
+                            <textarea class="rs-tx1 effect1">
+                            </textarea>
+                          <div>
+                        <div style="height: 100px;margin: 0 auto;position: relative;">
+                          <div id="bars">
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                          </div>
+                        </div>
+                        <form name="form1" method="post" action=""> 
+                          <center> 
+                          <input name="textarea" type="text" class="time1" value="" > 
+                          </center> 
+                          <script language="javascript"> 
+                          var second=0; 
+                          var minute=0; 
+                          var hour=0; 
+                          window.setTimeout("interval();",1000); 
+                          function interval() 
+                          { 
+                          second++; 
+                          if(second==60) 
+                          { 
+                          second=0;minute+=1; 
+                          } 
+                          if(minute==60) 
+                          { 
+                          minute=0;hour+=1; 
+                          } 
+                          document.form1.textarea.value = "-"+" "+hour+"："+minute+"："+second+" "+"-"; 
+                          window.setTimeout("interval();",1000); 
+                          } 
+                          </script> 
+                          
+                        </form> 
+                        <div class="playpause0"style=""> 
+                          <div class="playpause">
+                            <input type="checkbox" value="" id="playPauseCheckbox" name="playPauseCheckbox" />
+                            <label for="playPauseCheckbox"></label>
+                            <a class="close" href="readstory.html"><img src="../script/image/close.png" class="close2"></a>
+                          </div>
+
+                        </div>
+                          
+                      </div>    
+                  </div><!--content--> 
+                </div><!--pop-->  
+              </div><!--pop2--> 
+
+            </div><!--box-->
+
+            
+
+            
+
+
+  </div>
+</main>
+
+
+<footer class="mt-auto py-3 " id="footer">
+      <div class="container">
+        <span class="text-muted">@ReVoice 阿嬤的留聲機</span>
+      </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
