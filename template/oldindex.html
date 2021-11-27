@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../script/css/index.css">
+    <link rel="stylesheet" href="../script/css/style.css">
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    *,*::before,*::after {
+    box-sizing: content-box;
+    }
+
+    @media (max-width:600px ){
+      *,*::before,*::after {
+    box-sizing: border-box;
+    }
+    }
+
+    .boxs{
+      box-sizing: border-box;
+    }
+    </style>
+    <style>
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    main > .container {
+    padding: 40px 15px 0;
+    }
+    .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    }
+    @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+    }
+
+
+    </style>
+    <title>Revoice 阿嬤的留聲機</title>
+  </head>
+  <body class=" body d-flex flex-column h-100 ft bgg"  >
+    <!-navbar start-->
+    <nav class="navbar navbar-expand-md navbar-light aaa">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="../script/image/logo.png" alt="" width="40" height="60" class="d-inline-block align-text-center">
+          <img src="../script/image/logo2.png" alt="" width="120" height="32" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"  style="font-size: 20px;">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="madevoice.html">聲音還原</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="madeai.html">智能親友</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="call.html">語音通話</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="readstory.html">智慧伴讀</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="familytree.html">聲音族譜</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="change.html">文聲轉換</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                會員資料
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item boxs"  href="detail.html">基本資料</a></li>
+                <li><a class="dropdown-item boxs"  href="record.html">通話/伴讀紀錄</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          <div class="text-end">
+            <button class="button button1" onclick="location.href='login.html'">Login</button>
+            <button class="button button1" onclick="location.href='signup.html'">Sign-up</button>
+            
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    
+    <!--navbar end--->
+
+
+
+    <main class="flex-shrink-0" >
+
+
+    <div ><!----class="ho"--->
+      <div class="first" >
+       
+          <div style="float:left;">
+            <div class="ama">
+              <p class="resize">ReVoice&ensp;阿嬤的留聲機</p>
+              
+    <blockquote  >
+    <p class="wordsize">
+     你心中曾有無法抒發的思念?<br>
+    工作使你沒有心力陪伴孩子?<br>
+    現在讓ReVoice 阿嬤的留聲機幫助你<br>
+    <span  class="t">-與思念對話，用聲音陪伴-</span></p>
+  
+  <a href="#i"> <input type="button"  class="btn6 b"  value="詳細內容>>"></a>
+    </blockquote>            
+              
+            </div>
+  
+         <img src="../script/image/vo.png" class="vo">
+          
+          </div>
+          
+         
+
+
+          <div  style="float:left;">
+            <div id="turntable">
+              <div id="wood">
+                <div id="grain1"></div>
+                <div id="grain2"></div>
+                <div id="grain3"></div>
+                <div id="grain4"></div>
+                <div id="grain5"></div>
+                <div id="grain6"></div>
+                <div id="revoice">REVOICE</div>
+              </div>
+              <div id="grain12"></div>
+              <div id="wood2">
+                <div id="grain7"></div>
+                <div id="grain8"></div>
+                <div id="grain9"></div>
+                <div id="grain10"></div>
+                <div id="grain11"></div>
+                <img src="../script/image/grandma.png" id="grandma">
+              </div>
+              <div id="link-right"></div>
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="table"></div>
+              <div id="button"></div>
+              <div id="disk">
+                <div id="label"></div>
+              </div>
+              <div id="logodiv"><img src="../script/image/純logo.png" id="logo"></div>
+              <div id="axis"></div>
+              <div id="base">
+              </div>
+              
+              <div id="weight"></div>
+              <div id="axle"></div>
+              <div id="arm"></div>
+              <div id="head"></div>
+              <div id="head_shadow"></div>
+              <div id="stem1"></div>
+              <div id="stem_dark1"></div>
+              <div id="gold_base"></div>
+              <div id="gold_base_dark"></div>
+              <div id="gold1"></div>
+              <div id="gold1_dark"></div>
+              <div id="gold2"></div>
+              <div id="gold2_line1"></div>
+              <div id="gold2_line2"></div>
+              <div id="gold2_line3"></div>
+              <div id="gold2_line4"></div>
+              
+              <div id="gold2_dark"></div>
+              <div id="gold3"></div>
+              <div id="gold_line1"></div>
+              <div id="gold_line2"></div>
+              <div id="gold_line3"></div>
+              <div id="gold_line4"></div>
+              <div id="gold_line5"></div>
+              <div id="gold_line6"></div>
+              <div id="gold_line7"></div>
+              <div id="gold_line8"></div>
+              <div id="gold_line9"></div>
+              <div id="gold_line10"></div>
+              <div id="gold_flower1"></div>
+              <div id="gold_flower2"></div>
+              <div id="gold_flower3"></div>
+              <div id="gold_flower4"></div>
+              <div id="gold_flower5"></div>
+              <div id="gold_flower5_dark"></div>
+              <div id="gold_flower6"></div>
+              <div id="gold_flower7"></div>
+              <div id="gold_flower8"></div>
+              <div id="gold_flower9"></div>
+              <div id="gold_flower10"></div>
+              <div id="gold_flower10_dark"></div>
+              <div id="dark_shadow"></div>
+              <div id="uaua"></div>
+              <div id="uaua_dark"></div>
+              <div id="uaua2"></div>
+              <span class="music-note" id="one">&#9835;</span>
+              <span class="music-note" id="two">&#9834;</span>
+            </div>
+            
+          </div>
+       
+      </div>
+    </div>
+
+
+<div class="second" id="i">
+
+      <div style="float: left;">
+        <div style="margin-top:5%; ">
+
+
+          <div class="io1">
+       <img src="../script/image/revoice3.jpg"  class="inpic">
+            <div class="effect ">
+             <div class=" effect__subheading animate__backInLeft wow" data-wow-offset="70" >專屬聲音還原服務</div>
+              <h1 class="effect__heading">快速還原聲音，與虛擬親友通話，抒發思念</h1>
+            </div>
+            
+          </div>
+          <div class="io2">
+            <img src="../script/image/fr.jpg"  class="phpic" >
+            <section class="effect" >
+              <h2 class="effect__subheading animate__backInLeft wow" data-wow-offset="70" >智能親友服務</h2>
+              <h1 class="effect__heading">打造出擁有AI人工智慧的專屬語音陪伴機器人</h1>
+            </section>
+            <img src="../script/image/fr.jpg"  class="phpicc " >
+          </div>
+          <div class="io3">
+            <img src="../script/image/callphone.jpg" class="inpic">
+            <section class="effect">
+              <h2 class="effect__subheading animate__backInLeft wow" data-wow-offset="70" >語音通話服務</h2>
+              <h1 class="effect__heading">提供通話服務，讓人得以和思念對話，用聲音陪伴。</h1>
+            </section>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+<div class="second">
+
+      <div style="float: left;">
+        <div style="margin-top:5%; ">
+
+          
+
+
+            <div class="io2">
+            <img src="../script/image/smartreading.png"  class="phpic" >
+            <section class="effect " >
+              <h2 class="effect__subheading animate__backInLeft wow" data-wow-offset="70" >智慧伴讀服務</h2>
+              <h1 class="effect__heading">使用專屬聲音伴讀故事，減輕陪伴孩子負擔，獲得休息時間</h1>
+            </section>
+            <img src="../script/image/smartreading.png"  class="phpicc " >
+          </div>
+
+          <div class="io1">
+       <img src="../script/image/family.png"  class="inpic">
+            <section class="effect ">
+              <h2 class="effect__subheading animate__backInLeft wow" data-wow-offset="70" >聲音族譜服務</h2>
+              <h1 class="effect__heading">建立族譜樹狀圖，保留家族成員的聲音與故事</h1>
+            </section>
+            
+          </div>
+          
+
+
+          <div class="io2">
+            <img src="../script/image/podcaster.jpg"  class="phpic" >
+            <section class="effect" >
+              <h2 class="effect__subheading animate__backInLeft wow" data-wow-offset="70" >文聲轉換服務</h2>
+              <h1 class="effect__heading">將文字內容轉換成專屬語音，縮短創作時程，達到創作效率化</h1>
+            </section>
+            <img src="../script/image/podcaster.jpg"  class="phpicc " >
+          </div>
+       <!---- <div class="io3">
+            <img src="../script/image/3.png" class="inpic">
+            <section class="effect effect-a">
+              <h2 class="effect__subheading">文字轉語音服務</h2>
+              <h1 class="effect__heading">將文字內容轉換成專屬語音，縮短創作時程，達到創作效率化</h1>
+            </section>
+          </div>
+        </div>------>  
+        
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  
+</main>
+
+
+<footer class="mt-auto py-3 bg-light" id="footer">
+      <div class="container">
+        <span class="text-muted">@ReVoice 阿嬤的留聲機</span>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+  <!---
+  <div class="bgpic1 bgpic">
+    <div class="container0">
+      <div class="c1 ">
+        <img src="image/logo1.png"class="biglogo size" >
+      </div>
+      <div class="c2">
+        <div >
+          <p class="resize">ReVoice&ensp;阿嬤的留聲機</p></div>
+          <blockquote contenteditable="true">
+            <q class="wordsize">-&ensp;與思念對話，用聲音陪伴&ensp;-</q>
+          </blockquote>
+          
+        </div>
+      </div>
+    </div>
+    ----->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+      modal.style.display = "block";
+      }
+      // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
+        </script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <!-----自家js----->
+        <script type="text/javascript" src="../script/js/index.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>
+        $('#button').click(function() {
+        if ((($('#label').css('-webkit-animation-play-state')) == 'running') ||  (($('#label').css('animation-play-state')) == 'running')) {
+        $(this).css({
+        'top':'157px',
+        'box-shadow':'0px 0px 0px #1a1a1a'
+        });
+        $('#label').css({
+        '-webkit-animation-play-state': 'paused',
+        'animation-play-state': 'paused'
+        });
+        }
+        else {
+        $(this).css({
+        'top':'155px',
+        'box-shadow':'2px 2px 0px #1a1a1a'
+        });
+        $('#label').css({
+        '-webkit-animation-play-state': 'running',
+        'animation-play-state': 'running'
+        });
+        }
+        });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script type="text/javascript">new WOW().init();</script>
+      </body>
+    </html>
