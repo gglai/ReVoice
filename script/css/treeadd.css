@@ -1,0 +1,468 @@
+
+.bgg{
+background: url("../image/R6.png") ;
+
+}
+
+@media (max-width: 600px){
+    .bgg{
+        background: url("../image/pg1.png") ;
+    }
+}
+
+
+.body {
+    background-color:white;
+    font-family: 'cwTeXYen'!important;
+    font-weight: 800;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.bg1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 60%;
+    z-index: -10;
+    opacity: 0.7;
+} 
+.bg2{
+    position: absolute;
+    bottom: -35%;
+    right: -5%;
+    height:70%;
+    z-index: -20;
+    opacity: 0.7;
+}
+
+.bg3{
+    position: absolute;
+    bottom: 10%;
+    height:8%;
+    left: 8%;
+    opacity: 0.8;
+}
+.bg4{
+    position: absolute;
+    top: 12%;
+    height:5%;
+    right: 10%;
+    opacity: 0.7;
+}
+.bg5{
+    position: absolute;
+    top: 12%;
+    height:5%;
+    right: 10%;
+    opacity: 0.7;
+}
+.slider_container {
+    margin: 30px auto;
+    width: 420px;
+    height: 440px;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+}
+.slider_container img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.slider_container div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+
+
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    
+}
+
+/* 主要內容區域 */
+            .box h3{
+              text-align:center;
+              position:relative;
+              top:30px;
+              margin: 0 0 8% 0;
+              font-size: 40px;
+            }
+            .box {
+            position: relative;
+            top:-50px;
+            width:50%;
+            background:#FFF;
+            margin:40px 0 40px 45%;
+            border-radius: 30px;
+            }
+            .effect1{
+            -webkit-box-shadow: 0 0 12px  #D4D4D4;
+            -moz-box-shadow: 0 0 12px  #D4D4D4;
+             box-shadow: 0 0 15px 1px #D4D4D4;
+            }
+            .footer {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              padding: 1rem;
+              background-color: #efefef;
+              text-align: center;
+            }
+            .ch1{
+            font-size: 40px;
+            margin:0% 30% 2% 5%;
+            position: relative;
+            top: -50px;
+            border-radius:10px;
+
+            }
+            .ch-1{
+            width: 65px;
+            height: 65px;
+            position: relative;
+            top: 55px;
+            left: 90px;
+            }
+            .ch-1-1{
+            position: relative;
+            left: 170px;
+            color: #3C3C3C;
+            font-size: 45px;
+            font-weight: 800;
+            }
+/*新增成員、編輯成員區域*/           
+.rs-2{
+    color: #3C3C3C;
+    font-size: 25px;
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    width: 200px;
+}
+
+.rs-2 p{
+    width: 200px;
+    margin: 10px;
+}
+/*上面新增、編輯按鈕*/
+.ftbt{
+    position: relative;
+    top: 15px;
+    width: 150px;
+    margin: 35px;
+    padding: 8px;
+    border: 2px solid #EDBB1E;
+    border-radius: 30px;
+    color: #EDBB1E;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: all .2s ease-in-out;
+    background: white;
+}
+.ftbt:hover{
+    background: #EDBB1E;
+    border: 1px solid #EDBB1E;
+    color: #fefefe;
+    border-radius: 30px;
+}
+/*下面確定、完成按鈕*/
+.ftbt2{
+    position: relative;
+    left: 60%;
+    width: 150px;
+    margin: 35px;
+    padding: 8px;
+    border: 2px solid #EDBB1E;
+    border-radius: 30px;
+    color: #EDBB1E;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: all .2s ease-in-out;
+    background: white;
+}
+.ftbt2:hover{
+    background: #EDBB1E;
+    border: 1px solid #EDBB1E;
+    color: #fefefe;
+    border-radius: 30px;
+}
+.ul1{
+    list-style-type:none;
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+
+}
+.ul1 li{
+    margin: 0 auto;
+    width: 210px;
+
+}
+/*選取聲音與稱謂的select*/
+.main2{
+    margin: 0 auto;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #ffdbb1;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  width: 200px;
+  height: 2em;
+  line-height: 2;
+  font-weight: bolder;
+  background: #ffdbb1;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+/*
+@media (max-width: 600px){
+
+.select{
+    width: 12em;
+  height: 2em;
+  line-height: 2;
+}
+
+}
+*/
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: black;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #ffdbb1;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f1a54d;
+}
+/*條列抓取的聲音與稱謂*/
+.text1{
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    color: #85653E;
+}
+
+
+@media (max-width: 600px){
+    .text1{
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+    color: #85653E;
+}
+}
+
+ul hr{
+    width: 95%;
+    border-width: 2px;
+    border: 2px solid #85653E;
+}
+/*圖片*/
+.img1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 3% 3% 0 3%;
+}
+
+.mem{
+     width:20px;
+     height:20px; 
+     margin:3%;
+}
+
+@media{
+    .img1{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 12% 5% 0 9%;
+}
+.mem{
+    width:17px;
+     height:17px; 
+     margin-top:15%;
+     margin-left: 8%;
+}
+
+}
+
+
+
+
+/*RWD*/
+@media (max-width: 600px) {
+   .box h3{
+              text-align:center;
+              position:relative;
+              width: 300px;
+              top:20px;
+              margin: 0 0 0% 0;
+              font-size: 25px;
+            }
+            .box {
+            position: relative;
+            top:-50px;
+            width:85%;
+            background:#FFF;
+            margin:40px auto;
+            }
+            .effect1{
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            }
+            .footer {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              padding: 1rem;
+              background-color: #efefef;
+              text-align: center;
+            }
+            .ch1{
+            font-size: 40px;
+            margin:0 auto;
+            position: relative;
+            top: -50px;
+            border-radius:10px;
+            width: 180px;
+            }
+            .ch-1{
+            width: 55px;
+            height: 55px;
+            left: 0px;
+            position: relative;
+            top: 55px;
+            }
+            .ch-1-1{
+            position: relative;
+            top: 10px;
+            left: 65px;
+            color: #3C3C3C;
+            font-size: 30px;
+            font-weight: 800;
+            }
+.ftbt2{
+    position: relative;
+    left: 45%;
+    width: 90px;
+    margin: 35px;
+    padding: 8px;
+    border: 2px solid #EDBB1E;
+    border-radius: 30px;
+    color: #EDBB1E;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transition: all .2s ease-in-out;
+    background: white;
+}
+.ftbt{
+    position: relative;
+    top: -15px;
+    width: 90px;
+    margin: 35px;
+    border: 2px solid #EDBB1E;
+    border-radius: 30px;
+    color: #EDBB1E;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transition: all .2s ease-in-out;
+    background: white;
+}
+
+.rs-2{
+    color: #3C3C3C;
+    font-size: 20px;
+    width: 200px;
+    margin:0 auto;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    text-align: center;
+}
+.ul1{
+    list-style-type:none;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    top: 2%;
+    width: 300px;
+
+}
+
+}
+
+.aaa{
+
+}
+
+@media (max-width: 600px){
+    .aaa{
+        background-color:white ;
+    }
+}
