@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>ReVoice 建置機器人</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+    
+
+    <link rel="stylesheet" type="text/css" href="../script/css/makeai1.css">
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+      main > .container {
+        padding: 40px 15px 0;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class=" body d-flex flex-column h-100 ft bgg" >
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-light aaa">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+          <img src="../script/image/logo.png" alt="" width="40" height="60" class="d-inline-block align-text-center">
+          <img src="../script/image/logo2.png" alt="" width="120" height="32" class="d-inline-block align-text-top">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse" style="font-size: 20px;">
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link " href="madevoice.html">聲音還原</a><!-- 建置聲音網頁-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="madeai.html">智能親友</a><!-- 建置機器人網頁-->
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="call.html">語音通話</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="readstory.html">智慧伴讀</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="familytree.html">聲音族譜</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "   href="change.html">文聲轉換</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            會員資料
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item active"  aria-current="page" href="detail.html">基本資料</a></li>
+            <li><a class="dropdown-item" href="record.html">通話/伴讀紀錄</a></li>
+          </ul>
+        </li>
+        </ul>
+
+        <div class="text-end">
+            <p class="hi">Hi，XXX</p>
+            <button class="button button1" onclick="location.href='../index.html'">Logout</button>
+        </div>
+      </div>
+
+   
+  </div>
+</nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="ch1">
+            <img src="../script/image/robot.png" class="ch-1" >
+            <h1 class="ch-1-1" > 智能親友 <span class="badge badge-secondary"></span></h1>
+    </div>
+   
+        <ul class="step">
+          <li class="active current1 listep"> <span class="span">上傳文字紀錄 </span> </li>
+          <li class="listep">  <span class="span"> 填寫基本資料 </span> </li>
+          <li class="listep">  <span class="span"> 完成建置 </span></li>
+        </ul>
+      
+
+<div class="box effect1">
+        <main id="main">
+
+          <div id="div1" class="first current ">
+            <div>
+              <p class="ti">- 上傳聊天紀錄檔 -</p>
+              
+              <!---上傳---->
+              <form  action="index.html" method="POST" enctype="multipart/form-data">
+                <fieldset style="text-align: center;">
+                  
+                  <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+                  <div class="named1">
+                    <label for="fileselect"><p>上傳聊天紀錄檔:</p></label>
+                    <input type="file" id="fileselect" name="fileselect[]" multiple="multiple" class="upfile" accept=".txt,.mp3,.mp4,.wav" />
+                 
+                </fieldset>
+              </form>
+              <div style="margin-left: 20%;flex-wrap: wrap;max-width:60%;border: 2px dashed #555;border-radius: 7px;" >
+                <div id="messages" style="display:inline-flex; flex-wrap: wrap;" >
+                </div>
+              </div>
+              <!---上傳---->
+               <div style="text-align: center;">
+                  <input type="button"  class="btn6" id="song"  onclick="document.getElementById('next').click()" value="下一步">
+                  
+                </div>
+            </div>
+          </div>
+          <div id="div2"  class=" last "> 
+            <div >
+              <!--------->
+              <p class="ti">- 基本資料 -</p>
+              <form>
+                <div class="photo">
+                  <h5 style="display:inline;">上傳頭貼: </h5>
+                  <input type='file' onchange="readURL(this);" class="blockk" />
+                  <img id="blah" class="cc"  />
+                </div>
+                <div class="giben">
+                  
+                  
+                  <div class="named">
+                    <h5 style="display:inline-block;">名稱 </h5>
+                    <input  type="text"  class="na">
+                  </div>
+                  <div class="named">
+                    <h5 style="display:inline-block;">年齡 </h5>
+                    <input  type="text"  class="na">
+                  </div>
+                  <div class="named">
+                    <h5 style="display:inline-block;">性別 </h5>
+                    <label class="gb">
+                      <input type="radio" name="1" id="" class="a-radio">
+                      <span class="b-radio"></span>男
+                    </label>
+                    <label class="gb">
+                      <input type="radio" name="1" id="" class="a-radio">
+                      <span class="b-radio"></span>女
+                    </label>
+                  </div>
+                  <div class="named">
+                    <select class="select">
+                      <option>選擇聲音</option>
+                      <option>淑晴</option>
+                      <option>淑凡</option>
+                      <option>淑君</option>
+                      <option>淑宸</option>
+                      <option>淑修</option>
+                      <option>小晴</option>
+                    </select>
+                  </div>
+                  
+                  <div class="iv">
+             
+                </div>
+               
+            </div>
+                 <div style="text-align: center;">
+              <input type="button"  class="btn6" id="song"  onclick="document.getElementById('prev').click()" value="上一步">
+                  <input type="button"  class="btn6" id="song"  onclick="document.getElementById('next').click()" value="完成">
+                </div>
+                   </form>
+            </div>
+          </div>
+          
+          <div id="div3" class="last finish">
+            <div>
+              <p class="ti">- 完成建置 -</p>
+              <p class="done">聲音已建置完成!</p>
+              <p class="done">可選擇<span class="gre">智能親友</span>或前往<span class="gre">語音通話</span>或<span class="gre">智慧伴讀</span>:</p>
+              <div style="text-align: center;">
+                <button class="btn6" onclick="location.href='madeai.html'">智能親友</button>
+                <button class="btn6" onclick="location.href='call.html'">語音通話</button>
+                <button class="btn6" onclick="location.href='readstory.html'">智慧伴讀</button>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div style="margin-top: 30px; ">
+          
+          <button id="prev" class="pr bu bu1">回上頁</button>
+          <button id="next" class="ne bu bu1">下一頁</button>
+        </div>
+      </div>
+
+
+  
+</main>
+</div>
+
+<footer class="mt-auto py-3 bg-light" id="footer">
+      <div class="container">
+        <span class="text-muted">@ReVoice 阿嬤的留聲機</span>
+        
+      </div>
+    </footer>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+          modal.style.display = "none";
+          }
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+          if (event.target == modal) {
+          modal.style.display = "none";
+          }
+          }
+          </script>
+          
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+          <!-- Option 1: Bootstrap Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <!-----自家js----->
+          <script type="text/javascript" src="../script/js/makeai.js"></script>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
