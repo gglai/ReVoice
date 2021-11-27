@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>ReVoice 語音通話</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+    
+    <link rel="stylesheet" type="text/css" href="../script/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../script/css/call1.css">
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class=" body d-flex flex-column h-100 ft bgg" >
+    
+<!--<header>
+##Fixed navbar 
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light navbar-fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <img src="../script/image/logo.png" alt="" width="40" height="50" class="d-inline-block align-text-bottom">
+      <a href="index.html"><img src="../script/image/logo2.png" alt="" width="120" height="32" class="d-inline-block align-text-top"></a>
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse" style="font-size: 20px;">
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link " href="madevoice.html">建置聲音</a>## 建置聲音網頁
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="madeai.html">建置機器人</a>## 建置機器人網頁
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="call.html">語音通話</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="readstory.html">智慧伴讀</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="familytree.html">聲音族譜</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "   href="change.html">文聲轉換</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            會員資料
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item "  href="detail.html">基本資料</a></li>
+            <li><a class="dropdown-item "   href="record.html">通話/伴讀紀錄</a></li>
+          </ul>
+        </li>
+        </ul>
+
+        <div class="text-end">
+            <p class="hi">Hi，柔柔</p>
+            <button class="button button1" onclick="location.href='index.html'">Logout</button>
+        </div>
+      </div>
+
+   
+  </div>
+</nav>
+</header>-->
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+
+  <div class="container">
+            <div class="box ">
+                  <div id="popup1" >
+                    <div class="popup">
+                        <h2>通話中...</h2>
+                        <div class="">
+                          <div class="rs-tx">
+                            <img class="caim1"src="../script/image/im1.png" >
+                          </div>
+                        <div>
+                      <div style="height: 100px;margin: 0 auto;position: relative;">
+                        <div id="bars">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                      </div>
+                      <form name="form1" method="post" action=""> 
+                        <center> 
+                        <p style="font-size: 25px">  &nbsp;淑晴&nbsp; </p>
+                        <input name="textarea" type="text" class="time1" value="" > 
+                        </center> 
+                        <script language="javascript"> 
+                        var second=0; 
+                        var minute=0; 
+                        var hour=0; 
+                        window.setTimeout("interval();",1000); 
+                        function interval() 
+                        { 
+                        second++; 
+                        if(second==60) 
+                        { 
+                        second=0;minute+=1; 
+                        } 
+                        if(minute==60) 
+                        { 
+                        minute=0;hour+=1; 
+                        } 
+                        document.form1.textarea.value = "-"+" "+hour+"："+minute+"："+second+" "+"-"; 
+                        window.setTimeout("interval();",1000); 
+                        } 
+                        </script> 
+                        
+                      </form> 
+                        <div class="call">
+                          <a href=" call.html"class="close" ><img  class="caim" src="../script/image/ca3.png"></a>
+                        </div>
+                            
+                    </div>
+                      
+                </div><!--pop1-->
+                  
+            </div><!--box-->
+
+
+</main>
+
+ 
+<footer class="mt-auto py-3" id="footer">
+      <div class="container">
+        <span class="text-muted">@ReVoice 阿嬤的留聲機</span>
+      </div>
+    </footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
